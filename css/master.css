@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+
+.row {
+	width: 90%;
+	margin: 0 auto;
+}
+
+h1 {
+	text-align: center;
+	color: red;
+}
+
+.region1, .region2, .region3 {
+	width: 100%;
+	direction: rtl;
+}
+
+.title1, .title2, .title3 {
+	text-align: center;
+	width: 100px;
+	border: 1px solid black;
+	height: 100%;
+	font-weight: bold;
+}
+
+.title1 {
+	background-color: #c43ab2;
+	color: white;
+}
+
+.title2 {
+	background-color: #af2445;
+	color: white;
+}
+
+.title3 {
+	background-color: #afa224;
+	color: white;
+}
+
+.content {
+	padding: 10px;
+	text-align: justify;
+}
+
+/** Desktop view **/
+@media(min-width: 992px){
+	.col-lg, .col-lg{
+		float: left;
+		border: 1px solid black;
+		height: auto;
+		width: 30%;
+		background-color: #939186;
+		margin-right: 5%;		
+	}
+	.row div:last-child {
+		margin-right: 0px;
+	}
+}
+
+/** Tablet view **/
+@media(min-width: 768px) and (max-width: 991px){
+	.col-md-1, .col-md-2, .col-md-3 {
+		float: left;
+		border: 1px solid black;
+		height: auto;		
+		background-color: #939186;
+	}
+	.col-md-1 {
+		width: 48%;
+		margin-right: 4%;
+	}
+	.col-md-2 {
+		width: 48%;	
+	}	
+	.col-md-3 {
+		width: 100%;
+		margin-top: 25px;
+	}
+}
+
+/** Mobile view **/
+@media(max-width: 767px){
+	.col-sm {
+		float: left;
+		border: 1px solid black;
+		height: auto;
+		width: 100%;
+		background-color: #939186;
+		margin-bottom: 20px;
+	}
+}
